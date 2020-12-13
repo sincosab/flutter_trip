@@ -18,8 +18,8 @@ import org.devio.flutter.splashscreen.SplashScreen;
 
 import java.util.ArrayList;
 
-import io.flutter.app.FlutterActivity;
-import io.flutter.plugins.GeneratedPluginRegistrant;
+import io.flutter.embedding.android.FlutterActivity;
+
 
 
 public class MainActivity extends FlutterActivity {
@@ -27,15 +27,15 @@ public class MainActivity extends FlutterActivity {
     protected void onCreate(Bundle savedInstanceState) {
         SplashScreen.show(this, true);// here
         super.onCreate(savedInstanceState);
-        GeneratedPluginRegistrant.registerWith(this);
+
         registerSelfPlugin();
-//        initPermission();
+        initPermission();
         initUmengPlugin();
     }
 
     //百度语音监听
     private void registerSelfPlugin() {
-        AsrPlugin.registerWith(registrarFor("com.wkl.asr_plugin.AsrPlugin"));
+       // AsrPlugin.registerWith(registrarFor("com.wkl.asr_plugin.AsrPlugin"));
     }
 
     //友盟统计初始化

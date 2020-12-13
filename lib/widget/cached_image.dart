@@ -34,7 +34,7 @@ class CachedImage extends StatelessWidget {
             ),
           )
         : CachedNetworkImage(
-            alignment: alignment,
+           // alignment: alignment,
             fit: fit,
             imageUrl: imageUrl,
             width: width,

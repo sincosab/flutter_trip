@@ -35,7 +35,7 @@ public class MainActivity extends FlutterActivity {
 
     //百度语音监听
     private void registerSelfPlugin() {
-       // AsrPlugin.registerWith(registrarFor("com.wkl.asr_plugin.AsrPlugin"));
+      //  AsrPlugin.registerWith(registrarFor("com.wkl.asr_plugin.AsrPlugin"));
     }
 
     //友盟统计初始化
